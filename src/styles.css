@@ -1,0 +1,153 @@
+.converter-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.currency-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency-label {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.select-field {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.exchange-icon {
+    cursor: pointer;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.reset-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reset-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.language-switcher {
+    margin-top: 20px;
+}
+
+.language-button {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.language-button:hover {
+    background-color: #ddd;
+}
+
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+/* Темная тема */
+.converter-container.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.converter-container.dark .input-field,
+.converter-container.dark .select-field,
+.converter-container.dark .reset-button {
+    background-color: #333;
+    color: #f0f0f0;
+    border: 1px solid #555;
+}
+
+.converter-container.dark .error-message,
+.converter-container.dark .exchange-rate {
+    color: #ff4444;
+}
+
+/* Спиннер */
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.select-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none; /* Для кросс-браузерности */
+}
+
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+}
